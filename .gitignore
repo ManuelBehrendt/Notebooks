@@ -5,3 +5,11 @@ USMCodeCoffee/.DS_Store
 USMCodeCoffee/2020_06_02-Tmux/.DS_Store
 USMCodeCoffee/2020_06_02-Tmux/live_demonstration/*.ods#
 
+.gitignore.swp
+RUM2023/.jupyter
+RUM2023/output_00300/
+RUM2023/prep_data/
+RUM2023/todo.rtf
+RUM2023/output_00300.jld2
+RUM2023/output_00300.zip
+RUM2023/simulation_files.zip

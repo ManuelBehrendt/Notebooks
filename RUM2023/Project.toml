@@ -1,0 +1,9 @@
+[deps]
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+JuliaDB = "a93385a2-3734-596a-9a66-3cfbb77141e6"
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
