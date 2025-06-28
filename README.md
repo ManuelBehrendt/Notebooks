@@ -1,3 +1,5 @@
+
+* [MERA Jupyter Notebooks used for Documentation](https://github.com/ManuelBehrendt/Notebooks/Mera-Docs)
 * [RAMSES2023 MERA hands-on session in Oxford](https://github.com/ManuelBehrendt/RUM2023)
 * [RAMSES2023 MERA presentation in Oxford](https://github.com/ManuelBehrendt/Notebooks/blob/master/RUM2023/RUM2023.pdf)
 * [USM/LMU Code-Coffee 06/02/2020 in Munich: Tmux - Terminal Multiplexer](https://github.com/ManuelBehrendt/Notebooks/tree/master/USMCodeCoffee/2020_06_02-Tmux)
