@@ -630,10 +630,12 @@ uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 version = "2.28.6+0"
 
 [[deps.Mera]]
-deps = ["CodecBzip2", "CodecLz4", "CodecZlib", "DataStructures", "Dates", "ElasticArrays", "FortranFiles", "ImageTransformations", "IndexedTables", "JLD2", "OnlineStats", "Pkg", "Printf", "ProgressMeter", "Statistics", "StatsBase", "StructArrays", "TimerOutputs", "WAV", "WriteVTK"]
-path = "/Users/mabe/Documents/codes/github/Mera.jl"
+deps = ["CodecBzip2", "CodecLz4", "CodecZlib", "DataStructures", "Dates", "ElasticArrays", "FortranFiles", "ImageTransformations", "IndexedTables", "JLD2", "MacroTools", "OnlineStats", "Pkg", "Printf", "ProgressMeter", "Statistics", "StatsBase", "StructArrays", "TimerOutputs", "WAV", "WriteVTK"]
+git-tree-sha1 = "3b2a23e20f839c12e0d519c0b17718017cfd3ad1"
+repo-rev = "master"
+repo-url = "https://github.com/ManuelBehrendt/Mera.jl/"
 uuid = "02f895e8-fdb1-4346-8fe6-c721699f5126"
-version = "1.6.0"
+version = "1.6.2"
 
 [[deps.MicrosoftMPI_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1104,9 +1106,9 @@ uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 version = "0.11.3"
 
 [[deps.URIs]]
-git-tree-sha1 = "24c1c558881564e2217dcf7840a8b2e10caeb0f9"
+git-tree-sha1 = "bef26fb046d031353ef97a82e3fdb6afe7f21b1a"
 uuid = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
-version = "1.6.0"
+version = "1.6.1"
 
 [[deps.UUIDs]]
 deps = ["Random", "SHA"]
