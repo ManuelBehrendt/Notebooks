@@ -1,0 +1,213 @@
+# Julia files (including subfolders)
+*.jl
+**/*.jl
+Manifest.toml
+**/Manifest.toml
+Project.toml
+**/Project.toml
+
+# Shell scripts (including subfolders)
+*.sh
+**/*.sh
+
+# Jupyter Notebook files (keeping .ipynb files, ignoring checkpoints)
+# NOTE: .ipynb files are KEPT and tracked
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.jupyter/
+**/.jupyter/
+
+# Image files are KEPT and tracked
+# NOTE: No image file patterns (*.png, *.jpg, *.jpeg, *.gif, *.svg, etc.) are excluded
+
+# Python cache and virtual environments (including subfolders)
+__pycache__/
+**/__pycache__/
+*.py[cod]
+**/*.py[cod]
+*$py.class
+**/*$py.class
+*.so
+**/*.so
+.Python
+env/
+**/env/
+venv/
+**/venv/
+ENV/
+**/ENV/
+env.bak/
+**/env.bak/
+venv.bak/
+**/venv.bak/
+.venv/
+**/.venv/
+
+# IDE and editor files (including subfolders)
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+*.swp
+**/*.swp
+*.swo
+**/*.swo
+*~
+**/*~
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+
+# Log files (including subfolders)
+*.log
+**/*.log
+
+# Temporary files (including subfolders)
+*.tmp
+**/*.tmp
+*.temp
+**/*.temp
+*.bak
+**/*.bak
+*.backup
+**/*.backup
+
+# OS generated files (including subfolders)
+.DS_Store
+**/.DS_Store
+.DS_Store?
+**/.DS_Store?
+._*
+**/._*
+.Spotlight-V100
+**/.Spotlight-V100
+.Trashes
+**/.Trashes
+ehthumbs.db
+**/ehthumbs.db
+Thumbs.db
+**/Thumbs.db
+
+# Build and output directories (including subfolders)
+build/
+**/build/
+dist/
+**/dist/
+*.egg-info/
+**/*.egg-info/
+
+# Package manager files (including subfolders)
+node_modules/
+**/node_modules/
+package-lock.json
+**/package-lock.json
+yarn.lock
+**/yarn.lock
+
+# Compiled documentation (including subfolders)
+docs/_build/
+**/docs/_build/
+docs/build/
+**/docs/build/
+
+# Testing (including subfolders)
+.coverage
+**/.coverage
+.pytest_cache/
+**/.pytest_cache/
+.tox/
+**/.tox/
+htmlcov/
+**/htmlcov/
+
+# Local environment files (including subfolders)
+.env
+**/.env
+.env.local
+**/.env.local
+.env.*.local
+**/.env.*.local
+
+# Ignore everything in the root except markdown and assets
+# (Uncomment if you want to only track markdown files)
+# /*
+# !markdown/
+# !assets/
+# !.gitignore
+# !README.md
+
+# Re-execution staging dir (duplicates the tracked top-level notebooks)
+executed/
+**/executed/
+
+# =============================================================================
+# Publishable content — added 2026-07-31
+#
+# These notebooks are the SOURCE OF TRUTH for the Mera.jl documentation: each is
+# converted to Markdown and becomes a page under Mera.jl/docs/src, and publishing
+# them is what makes the "Run it yourself" link on 44 tutorial pages resolve.
+#
+# So this folder should hold notebooks and the assets a notebook needs — nothing
+# else. Unfiltered it is 7.3 GB, of which ~7 GB is simulation data, VTK exports,
+# and rendered copies of files that already live in the Mera.jl repo.
+#
+# Rule of thumb: if a file can be REGENERATED — by running a notebook, by
+# nbconvert, or by re-exporting from a simulation — it does not belong here.
+# =============================================================================
+
+# ── nbconvert output ─────────────────────────────────────────────────────────
+# The rendered pages and their extracted figures live in Mera.jl/docs/src.
+# A second copy here is one more thing to update and one more to forget.
+/*.md
+!/README.md
+!/*_NOTES.md
+*.html
+**/*.html
+*_files/
+**/*_files/
+markdown/
+
+# ── retired notebooks ────────────────────────────────────────────────────────
+# Superseded by current pages; kept on disk for reference, not for readers.
+_superseded/
+
+# ── other projects — present on disk, deliberately NOT published ─────────────
+# CALIGO belongs to a separate project. It stays in this folder for local use;
+# it must not be pushed to the public Notebooks repo. Do not delete it.
+# (Its rendered copy under markdown/ is already covered above.)
+11_caligo_*
+
+# ── notebooks that back no documentation page ────────────────────────────────
+# A working variant of 03_hydro_Get_Subregions run on the AVALON simulation. No
+# docs page is generated from it and nothing links to it, so publishing it would
+# add 21 MB — the largest file in the folder — that no reader can reach.
+#
+# Checked before adding: every OTHER notebook without a generated page is still
+# linked by URL from the docs (16_multi_OtherCodes from multicode/gadget_reader/
+# arepo_reader; the examples/ and paraview/ notebooks from their own pages), so
+# excluding those would create dead links rather than save space.
+03_hydro_Get_Subregions_avalon.ipynb
+
+# ── ParaView export products (5.2 GB) ────────────────────────────────────────
+# The VTK notebooks WRITE these. Ship the notebooks (112 KB), not their output.
+paraview/output*/
+*.vtu
+*.vtm
+*.vti
+*.pvd
+
+# ── example datasets (1.7 GB) ────────────────────────────────────────────────
+# simulation_hydro.dat and .csv are 463 MB EACH — past GitHub's 100 MB per-file
+# limit, so a push would be rejected outright. The notebooks regenerate them.
+examples/*.dat
+examples/*.csv
+examples/*.jld
+examples/*.jld2
+examples/*.jls
+examples/*.jls.gz
+
+# ── raw simulation data, wherever it turns up ────────────────────────────────
+*.hdf5
+*.h5
+output_*/

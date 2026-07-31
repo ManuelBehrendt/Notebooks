@@ -1,0 +1,10 @@
+# pages.protected — committed docs pages RICHER than their notebook render
+# ==========================================================================
+# render_docs.sh refuses to overwrite pages listed here (skips with a message).
+#
+# 2026-07-02: ALL 16 formerly-protected pages were reconciled — their curated
+# prose was folded back into the notebooks' markdown cells (code cells and
+# outputs untouched), and the two renamed notebooks (immersive.ipynb,
+# multicode_examples.ipynb) now match their page basenames. The notebooks are
+# the source of truth again; this list is EMPTY. If a future page is enriched
+# by hand instead of through its notebook, list it here until reconciled.

@@ -1,0 +1,16 @@
+# pages.manifest — deliberate NEW documentation pages
+# =====================================================
+# render_docs.sh updates pages whose basename already exists in docs/src.
+# A rendered notebook with NO existing page is created only if listed here:
+#
+#   <basename>.md [subdir-under-docs/src]
+#
+# One entry per line; the optional second field is the target subdirectory
+# under docs/src (default: docs/src itself). Lines starting with # are
+# comments. Remember to also add the page to the nav in docs/make.jl.
+#
+# Phase 7: off-axis projection internals (camera basis, deposit kernels, kinematics)
+offaxis_internals.md
+# Phase 8: getting-started track
+switching_to_mera.md
+julia_for_simulation_analysis.md

@@ -1,0 +1,8 @@
+# tabbed_pages.manifest — code-switcher page variants
+# =====================================================
+# `source.md -> target.md`: after conversion, the converter wraps each run of
+# `## <Code> …` sections of source.md in tab markers and writes target.md.
+# Register target.md in pages.manifest (if it is a new page) and in the nav.
+#
+# PILOT (Phase 5): tabbed variant of the multi-code worked examples.
+multicode_examples.md -> multicode_examples.md
