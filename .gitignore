@@ -6,3 +6,10 @@ USMCodeCoffee/2020_06_02-Tmux/.DS_Store
 USMCodeCoffee/2020_06_02-Tmux/live_demonstration/*.ods#
 
 .gitignore.swp
+
+# ── superseded documentation set — kept locally, not published ────────────────
+# version_1 backed the pre-2026 docs. version_1.1 supersedes it and is what the
+# Mera.jl documentation is generated from. The files stay on the working drive;
+# they are simply no longer part of this repository.
+Mera-Docs/version_1/
+Mera-Docs/version_1.zip
