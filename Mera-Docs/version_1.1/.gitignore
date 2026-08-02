@@ -178,6 +178,17 @@ _superseded/
 # (Its rendered copy under markdown/ is already covered above.)
 11_caligo_*
 
+# ── in-development work, not for publication ─────────────────────────────────
+# overlay_absorption teaches absorption_map / emission_map / column_integral, which
+# live in dev/offaxis_synthobs and are NOT part of the released package. The approach
+# is still being designed, so the page and its notebook stay private until it is.
+overlay_absorption.ipynb
+
+# The immersive volume renderer moved to dev/immersive on 2026-08-02, alongside
+# dev/loscubes and dev/offaxis_synthobs. Its notebook stays local until that work
+# is ready for release.
+immersive.ipynb
+
 # ── notebooks that back no documentation page ────────────────────────────────
 # A working variant of 03_hydro_Get_Subregions run on the AVALON simulation. No
 # docs page is generated from it and nothing links to it, so publishing it would
