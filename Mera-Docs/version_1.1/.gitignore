@@ -222,3 +222,8 @@ examples/*.jls.gz
 *.hdf5
 *.h5
 output_*/
+
+# Notebook builders — private laptop tooling. They generated these notebooks up to
+# late July and are now STALE: every notebook has been edited and re-executed since,
+# so running one would silently discard that work. Kept locally as design record.
+builders/
