@@ -9,8 +9,17 @@
 # under docs/src (default: docs/src itself). Lines starting with # are
 # comments. Remember to also add the page to the nav in docs/make.jl.
 #
-# Phase 7: off-axis projection internals (camera basis, deposit kernels, kinematics)
-offaxis_internals.md
 # Phase 8: getting-started track
 switching_to_mera.md
 julia_for_simulation_analysis.md
+# First-look tutorial: quicklook and report, on a 640-CPU run
+first_look.md
+# Sinks: load-time selection and regions, on the six-sink fixture
+02_sinks_Load_Selections.md
+03_sinks_Get_Subregions.md
+# RT: first inspection, the mechanics rather than the physics
+01_rt_First_Inspection.md
+# Units, scaling and constants: the reference split out of First Steps
+units_and_constants.md
+# Pipelines: loadall, macros and bundles, run on mw_L10
+pipelines.md

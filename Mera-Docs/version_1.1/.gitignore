@@ -172,6 +172,24 @@ markdown/
 # Superseded by current pages; kept on disk for reference, not for readers.
 _superseded/
 
+# ── parked notebooks — on disk, never published ──────────────────────────────
+# Kept deliberately, but out of the pipeline and out of this repository. The
+# converter reads the top level plus examples/ and paraview/ only, so anything
+# here is invisible to render_docs.sh as well as to GitHub. Each folder carries
+# a README.txt saying what it holds and why.
+# _dev:       features that moved out of the package into dev/
+# _external:  not Mera, CALIGO and friends
+# _variants:  alternative versions of pages that are already published
+# _multicode: belongs to the 2.0 branch, produces no page today
+# _archive:   superseded states of pages, kept for reference, never rendered
+# (trailing comments are NOT supported on a pattern line: the comment becomes
+#  part of the pattern and the rule silently matches nothing)
+_dev/
+_external/
+_variants/
+_multicode/
+_archive/
+
 # ── other projects — present on disk, deliberately NOT published ─────────────
 # CALIGO belongs to a separate project. It stays in this folder for local use;
 # it must not be pushed to the public Notebooks repo. Do not delete it.
