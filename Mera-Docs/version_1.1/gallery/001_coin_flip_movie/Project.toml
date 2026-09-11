@@ -1,0 +1,19 @@
+# The environment this recipe was written against. `Pkg.activate` on this folder and
+# `Pkg.instantiate()` gives you the same package versions, whatever else is installed on your
+# machine. The first cell of the notebook does both.
+#
+# Commit the Manifest.toml that instantiating produces: Project.toml names the packages and the
+# versions that are allowed, Manifest.toml records the exact ones that ran.
+name = "coin_flip_movie"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[compat]
+CairoMakie = "0.15"
+ColorSchemes = "3.31"
+Mera = "1.8"
+julia = "1.10"

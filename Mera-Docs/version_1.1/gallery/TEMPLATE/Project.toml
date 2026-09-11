@@ -1,0 +1,14 @@
+# The environment your recipe runs in. Add the packages you use with
+#     julia> using Pkg; Pkg.activate("."); Pkg.add("CairoMakie")
+# which fills in [deps] for you, then set [compat] to the versions you actually ran.
+#
+# Commit the Manifest.toml alongside it: Project.toml says which versions are allowed,
+# Manifest.toml records the exact ones, down to the last transitive dependency.
+name = "your_recipe"
+
+[deps]
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+
+[compat]
+Mera = "1.8"
+julia = "1.10"

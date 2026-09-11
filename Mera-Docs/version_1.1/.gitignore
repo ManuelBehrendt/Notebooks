@@ -245,3 +245,16 @@ output_*/
 # late July and are now STALE: every notebook has been edited and re-executed since,
 # so running one would silently discard that work. Kept locally as design record.
 builders/
+
+# JupyterLab writes a shadow copy of each open notebook here. It is an editor artifact,
+# never a source file.
+.virtual_documents/
+**/.virtual_documents/
+
+# The gallery is the exception to the rules above. A recipe is only reproducible if it ships
+# the environment it ran in, and the thumbnail helper is part of the folder rather than a
+# stray script. Without these three the gallery reaches GitHub as notebooks with no way to
+# rerun them.
+!gallery/make_thumb.jl
+!gallery/**/Project.toml
+!gallery/**/Manifest.toml
