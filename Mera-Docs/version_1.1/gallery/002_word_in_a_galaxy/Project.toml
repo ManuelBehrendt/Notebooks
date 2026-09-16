@@ -4,6 +4,15 @@
 #
 # Commit the Manifest.toml that instantiating produces: Project.toml names the packages and the
 # versions that are allowed, Manifest.toml records the exact ones that ran.
+#
+# There is no Manifest.toml here yet, and that is deliberate. This recipe needs `loadall` and the
+# region algebra (`Cuboid`, the boolean operators), which arrived in Mera 1.8. The General registry
+# currently publishes up to 1.7.0, so the environment cannot be resolved from the registry and no
+# portable manifest can be written. Once 1.8.0 is registered, run this from inside the folder:
+#
+#     julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.status()'
+#
+# and commit the Manifest.toml it produces.
 name = "word_in_a_galaxy"
 
 [deps]
