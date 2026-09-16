@@ -29,6 +29,7 @@ Notebooks carry no stored outputs: you produce them by running.
 |---|---|---|---|---|---|
 | | [`TEMPLATE/`](TEMPLATE) | any | the skeleton to start from, with a cell that prints your attribution block | | |
 | <img src="001_coin_flip_movie/media/coin_flip_movie_thumb.png" width="180"> | [`001_coin_flip_movie/`](001_coin_flip_movie) | RAMSES | a three-panel animation, Σ / v_LOS / T, camera tipping face-on to edge-on, turning in place, tumbling like a spun coin, falling flat. Seamless loop. Needs CairoMakie, ColorSchemes, ffmpeg. | Manuel Behrendt | checked 2026-09-11 |
+| <img src="002_word_in_a_galaxy/media/word_in_a_galaxy_thumb.png" width="180"> | [`002_word_in_a_galaxy/`](002_word_in_a_galaxy) | RAMSES | the word MERA carved out of a gas disc with region algebra, and the same letters kept instead, face-on, at 60° and repeated on the stars, plus a movie of the word turning, flipping and zooming. A stencil font built from `Cuboid`s. Needs CairoMakie and ffmpeg. | Manuel Behrendt | contributed 2026-09-16 |
 
 **Reads** is the simulation code a recipe was written against. Most of Mera's analysis is
 code-agnostic, so a RAMSES recipe usually transfers with no change beyond the path. Readers for
