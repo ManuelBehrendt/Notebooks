@@ -1,0 +1,26 @@
+# The environment this recipe was written against. `Pkg.activate` on this folder and
+# `Pkg.instantiate()` gives you the same package versions, whatever else is installed on your
+# machine. The first cell of the notebook does both.
+#
+# There is no Manifest.toml here yet, and that is deliberate. This recipe needs `loadall` and the
+# region algebra (`Mera.Sphere`, `Mera.Cylinder`, the boolean operators), which arrived in Mera 1.8.
+# The General registry currently publishes up to 1.7.0, so the environment cannot be resolved from
+# the registry and no portable manifest can be written. Once 1.8.0 is registered, run this from
+# inside the folder:
+#
+#     julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.status()'
+#
+# and commit the Manifest.toml it produces.
+name = "probe_through_a_galaxy"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[compat]
+CairoMakie = "0.15"
+ColorSchemes = "3.31"
+Mera = "1.8"
+julia = "1.10"
