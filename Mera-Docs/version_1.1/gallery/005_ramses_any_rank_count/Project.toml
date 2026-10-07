@@ -1,0 +1,17 @@
+# The environment this recipe runs in. It needs a Mera with `repartition` and `writeramses`, which
+# are in the development version until the next release:
+#     julia> using Pkg; Pkg.activate("."); Pkg.develop(path="/path/to/Mera.jl"); Pkg.add("CairoMakie")
+# Commit the Manifest.toml alongside it once those functions are in a registered release.
+name = "ramses_any_rank_count"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+CairoMakie = "0.12, 0.13, 0.14, 0.15"
+Mera = "1.8"
+julia = "1.10"

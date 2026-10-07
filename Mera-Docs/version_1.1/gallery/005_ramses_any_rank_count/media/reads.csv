@@ -1,0 +1,5 @@
+source,seconds,peak_gb,size_gb
+RAMSES, 5120 ranks (original),843.3,35.39,57.79
+RAMSES, 512 ranks,713.4,35.84,29.55
+RAMSES, 10240 ranks,1086.4,33.43,122.78
+mera file,64.1,18.27,15.87

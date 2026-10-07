@@ -1,0 +1,7 @@
+route,ranks,same_tree,hydro,grav,particles
+repartition,512,true,0.0,0.0,0.0
+repartition,5120,true,0.0,0.0,0.0
+repartition,10240,true,0.0,0.0,0.0
+writeramses,512,true,3.086485558785542e-16,0.0,0.0
+writeramses,5120,true,3.086485558785542e-16,0.0,0.0
+writeramses,10240,true,3.086485558785542e-16,0.0,0.0

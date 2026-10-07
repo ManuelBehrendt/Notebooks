@@ -1,0 +1,8 @@
+route,ranks,seconds,peak_gb,size_gb,files,ngridmax
+repartition,512,87.0,7.39,29.55,2057,82164
+repartition,5120,268.0,8.83,58.08,20489,11606
+repartition,10240,790.2,10.47,122.78,40969,6891
+load mera file,0,79.2,33.46,15.87,1,0
+writeramses,512,281.4,67.07,29.55,2057,82164
+writeramses,5120,456.3,72.2,58.08,20489,11606
+writeramses,10240,899.2,73.23,122.78,40969,6891
