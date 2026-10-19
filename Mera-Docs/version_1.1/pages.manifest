@@ -23,3 +23,20 @@ first_look.md
 units_and_constants.md
 # Pipelines: loadall, macros and bundles, run on mw_L10
 pipelines.md
+# Volume rendering: colour and opacity per cell, orbits and camera paths on mw_L10
+17_multi_Volume_Rendering.md
+# PLUTO first look: getinfo, the cell table, a projection (pluto_sedov3d)
+40_pluto_First_Inspection.md
+# Chombo first look: AMR levels, gravity potential (yt IsothermalSphere)
+41_chombo_First_Inspection.md
+# Athena++ first look: 5 AMR levels, MHD, 22M cells (yt AM06)
+42_athena_First_Inspection.md
+# GADGET first look: particles not a grid, families, no gethydro (yt GadgetDiskGalaxy)
+44_gadget_First_Inspection.md
+# AREPO first look: moving mesh, volume, deposition choice (yt ArepoBullet)
+45_arepo_First_Inspection.md
+# FLASH first look: PARAMESH AMR, stored temperature, mu from the file (yt GasSloshing)
+43_flash_First_Inspection.md
+# offaxis_validation.md moved to _dev/ on 2026-09-28 (a separate paper will present it)
+# Restart RAMSES with any number of CPUs: repartition and writeramses, checked against RAMSES
+07_2_multi_RAMSES_Restart.md
