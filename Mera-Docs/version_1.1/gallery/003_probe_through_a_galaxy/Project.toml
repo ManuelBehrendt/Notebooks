@@ -2,15 +2,9 @@
 # `Pkg.instantiate()` gives you the same package versions, whatever else is installed on your
 # machine. The first cell of the notebook does both.
 #
-# There is no Manifest.toml here yet, and that is deliberate. This recipe needs `loadall` and the
-# region algebra (`Mera.Sphere`, `Mera.Cylinder`, the boolean operators), which arrived in Mera 1.8.
-# The General registry currently publishes up to 1.7.0, so the environment cannot be resolved from
-# the registry and no portable manifest can be written. Once 1.8.0 is registered, run this from
-# inside the folder:
-#
-#     julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.status()'
-#
-# and commit the Manifest.toml it produces.
+# The Manifest.toml next to it records the exact versions. It was resolved from the General
+# registry against Mera 1.8.0, the first release with everything this recipe uses; the recipe
+# itself was written on a development checkout of 1.8.0.
 name = "probe_through_a_galaxy"
 
 [deps]

@@ -1,7 +1,9 @@
-# The environment this recipe runs in. It needs a Mera with `repartition` and `writeramses`, which
-# are in the development version until the next release:
-#     julia> using Pkg; Pkg.activate("."); Pkg.develop(path="/path/to/Mera.jl"); Pkg.add("CairoMakie")
-# Commit the Manifest.toml alongside it once those functions are in a registered release.
+# The environment this recipe runs in. `Pkg.activate` on this folder and `Pkg.instantiate()` gives
+# you the same package versions, whatever else is installed on your machine.
+#
+# The Manifest.toml next to it records the exact versions. It was resolved from the General
+# registry against Mera 1.8.0, the first release with `repartition` and `writeramses`; the recipe
+# itself was written on a development checkout of 1.8.0.
 name = "ramses_any_rank_count"
 
 [deps]
