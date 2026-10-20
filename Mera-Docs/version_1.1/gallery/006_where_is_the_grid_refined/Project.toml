@@ -1,0 +1,16 @@
+# The environment this recipe was written against. `Pkg.activate` on this folder and
+# `Pkg.instantiate()` gives you the same package versions, whatever else is installed on your
+# machine; the first cell of the notebook does both. The Manifest.toml next to it records the
+# exact versions that ran.
+name = "where_is_the_grid_refined"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Mera = "02f895e8-fdb1-4346-8fe6-c721699f5126"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[compat]
+CairoMakie = "0.15"
+Mera = "1.8"
+julia = "1.10"
