@@ -40,3 +40,7 @@ pipelines.md
 # offaxis_validation.md moved to _dev/ on 2026-09-28 (a separate paper will present it)
 # Restart RAMSES with any number of CPUs: repartition and writeramses, checked against RAMSES
 07_2_multi_RAMSES_Restart.md
+# Sharing results: sidecars, readsidecar, writesidecar, citation, bundle, simulationrecord
+export_sidecars.md
+# Exporting data: the formats exportdata writes, split from Sharing Results
+exporting_data.md
