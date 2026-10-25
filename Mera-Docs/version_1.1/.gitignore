@@ -171,51 +171,6 @@ markdown/
 # Superseded by current pages; kept on disk for reference, not for readers.
 _superseded/
 
-# ── parked notebooks — on disk, never published ──────────────────────────────
-# Kept deliberately, but out of the pipeline and out of this repository. The
-# converter reads the top level plus examples/ and paraview/ only, so anything
-# here is invisible to render_docs.sh as well as to GitHub. Each folder carries
-# a README.txt saying what it holds and why.
-# _dev:       features that moved out of the package into dev/
-# _external:  not Mera, CALIGO and friends
-# _variants:  alternative versions of pages that are already published
-# _multicode: belongs to the 2.0 branch, produces no page today
-# _archive:   superseded states of pages, kept for reference, never rendered
-# (trailing comments are NOT supported on a pattern line: the comment becomes
-#  part of the pattern and the rule silently matches nothing)
-_dev/
-_external/
-_variants/
-_multicode/
-_archive/
-
-# ── other projects — present on disk, deliberately NOT published ─────────────
-# CALIGO belongs to a separate project. It stays in this folder for local use;
-# it must not be pushed to the public Notebooks repo. Do not delete it.
-# (Its rendered copy under markdown/ is already covered above.)
-11_caligo_*
-
-# ── in-development work, not for publication ─────────────────────────────────
-# overlay_absorption teaches absorption_map / emission_map / column_integral, which
-# live in dev/offaxis_synthobs and are NOT part of the released package. The approach
-# is still being designed, so the page and its notebook stay private until it is.
-overlay_absorption.ipynb
-
-# The immersive volume renderer moved to dev/immersive on 2026-08-02, alongside
-# dev/loscubes and dev/offaxis_synthobs. Its notebook stays local until that work
-# is ready for release.
-immersive.ipynb
-
-# ── notebooks that back no documentation page ────────────────────────────────
-# A working variant of 03_hydro_Get_Subregions run on the AVALON simulation. No
-# docs page is generated from it and nothing links to it, so publishing it would
-# add 21 MB — the largest file in the folder — that no reader can reach.
-#
-# Checked before adding: every OTHER notebook without a generated page is still
-# linked by URL from the docs (16_multi_OtherCodes from multicode/gadget_reader/
-# arepo_reader; the examples/ and paraview/ notebooks from their own pages), so
-# excluding those would create dead links rather than save space.
-03_hydro_Get_Subregions_avalon.ipynb
 
 # ── ParaView export products (5.2 GB) ────────────────────────────────────────
 # The VTK notebooks WRITE these. Ship the notebooks (112 KB), not their output.
@@ -240,11 +195,6 @@ examples/*.jls.gz
 *.h5
 output_*/
 
-# Notebook builders — private laptop tooling. They generated these notebooks up to
-# late July and are now STALE: every notebook has been edited and re-executed since,
-# so running one would silently discard that work. Kept locally as design record.
-builders/
-
 # JupyterLab writes a shadow copy of each open notebook here. It is an editor artifact,
 # never a source file.
 .virtual_documents/
@@ -257,3 +207,5 @@ builders/
 !gallery/make_thumb.jl
 !gallery/**/Project.toml
 !gallery/**/Manifest.toml
+
+# Notebooks and folders kept on this machine only are listed in .git/info/exclude.
