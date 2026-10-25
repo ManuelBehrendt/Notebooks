@@ -161,7 +161,6 @@ executed/
 # A second copy here is one more thing to update and one more to forget.
 /*.md
 !/README.md
-!/*_NOTES.md
 *.html
 **/*.html
 *_files/
