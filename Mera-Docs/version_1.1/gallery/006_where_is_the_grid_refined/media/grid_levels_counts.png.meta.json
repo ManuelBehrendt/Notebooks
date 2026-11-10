@@ -1,0 +1,73 @@
+{
+    "schema": "mera-sidecar/1",
+    "created_utc": "2026-11-04T21:50:32.928",
+    "file": {
+        "name": "grid_levels_counts.png",
+        "bytes": 81015,
+        "sha256": "6233033fb7fe8e0113e2c78b190852b194f60a3779d600acde804811eba286cc"
+    },
+    "result": {
+        "kind": "figure",
+        "format": "png",
+        "made_from": {
+            "type": "HydroDataType",
+            "rows": 166991609
+        }
+    },
+    "source": {
+        "complete": true,
+        "summary": "Mera v1.10.1 | L13/output_00390 | 578.6 Myr | L=48.0 ndim=3 lmin=6 lmax=13 | ScalesType003",
+        "simulation_path": ".../MilkyWay/L13",
+        "output": 390,
+        "simcode": "RAMSES",
+        "cosmological": false,
+        "time_myr": 578.6004124261041,
+        "redshift": null,
+        "aexp": 1,
+        "boxlen": 48,
+        "ndim": 3,
+        "levelmin": 6,
+        "levelmax": 13,
+        "scale_type": "ScalesType003",
+        "output_written": "2024-06-30T15:46:45.672",
+        "code_length_kpc": 1.0000000000006481
+    },
+    "input_files": null,
+    "analysis": {
+        "environment": {
+            "path": ".../gallery/006_where_is_the_grid_refined",
+            "project_sha256": "9297480cd239bad76fc68580a97affc7e6c39bf47729add80ef125d2b3e92e77",
+            "manifest": "Manifest.toml",
+            "manifest_sha256": "b75a02921919fcf51c2be987bf501fdd1dfe5dcc1da18c2bc2b74c82bc88db32",
+            "packages": {
+                "CairoMakie": "0.15.16",
+                "Dates": "1.11.0",
+                "Mera": "1.10.1",
+                "Printf": "1.11.0"
+            }
+        },
+        "script": null
+    },
+    "environment": {
+        "julia_version": "1.12.7",
+        "mera_version": "1.10.1",
+        "mera_build": "1.10.1",
+        "mera_install": {
+            "version": "1.10.1",
+            "source": "registry",
+            "registered": true,
+            "branch": null,
+            "commit": null,
+            "dirty": null,
+            "url": null,
+            "rev": null,
+            "tree_hash": "7b9eba31b65104f14555a042cfbc75f755f7d744"
+        },
+        "os": "Darwin",
+        "machine": "arm64-apple-darwin25.5.0",
+        "cpu_model": "Apple M2 Pro",
+        "cpu_threads": 8,
+        "julia_threads": 8,
+        "blas_threads": 1
+    }
+}

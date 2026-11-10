@@ -1,0 +1,263 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "name": "A probe sphere through a galaxy",
+            "datePublished": "2026-11-05",
+            "hasPart": [
+                {
+                    "@id": "probe_hero.png.meta.json"
+                },
+                {
+                    "@id": "probe_hero.png"
+                },
+                {
+                    "@id": "probe_movie.mp4.meta.json"
+                },
+                {
+                    "@id": "probe_movie.mp4"
+                },
+                {
+                    "@id": "probe_preview.gif.meta.json"
+                },
+                {
+                    "@id": "probe_preview.gif"
+                },
+                {
+                    "@id": "probe_thumb.png.meta.json"
+                },
+                {
+                    "@id": "probe_thumb.png"
+                },
+                {
+                    "@id": "software.bib"
+                }
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/CC-BY-4.0"
+            },
+            "author": [
+                {
+                    "@id": "#person-1"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#make-probe_hero.png"
+                },
+                {
+                    "@id": "#make-probe_movie.mp4"
+                },
+                {
+                    "@id": "#make-probe_preview.gif"
+                },
+                {
+                    "@id": "#make-probe_thumb.png"
+                }
+            ]
+        },
+        {
+            "@id": "probe_hero.png.meta.json",
+            "@type": "File",
+            "name": "probe_hero.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "probe_hero.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of probe_hero.png"
+        },
+        {
+            "@id": "probe_hero.png",
+            "@type": "File",
+            "name": "probe_hero.png",
+            "contentSize": "1125474",
+            "encodingFormat": "image/png",
+            "sha256": "44335c5766a5740298f02e9b60ded9ffaf9823f826e96e3e983e9b04a5525dcf",
+            "dateCreated": "2026-11-05T01:54:27.031",
+            "subjectOf": {
+                "@id": "probe_hero.png.meta.json"
+            }
+        },
+        {
+            "@id": "probe_movie.mp4.meta.json",
+            "@type": "File",
+            "name": "probe_movie.mp4.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "probe_movie.mp4"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of probe_movie.mp4"
+        },
+        {
+            "@id": "probe_movie.mp4",
+            "@type": "File",
+            "name": "probe_movie.mp4",
+            "contentSize": "1765204",
+            "encodingFormat": "video/mp4",
+            "sha256": "616d7ee436b6a1d0c455098c817629045d3ecdcb03605d754481a6089eafd7e2",
+            "dateCreated": "2026-11-05T01:54:27.529",
+            "subjectOf": {
+                "@id": "probe_movie.mp4.meta.json"
+            }
+        },
+        {
+            "@id": "probe_preview.gif.meta.json",
+            "@type": "File",
+            "name": "probe_preview.gif.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "probe_preview.gif"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of probe_preview.gif"
+        },
+        {
+            "@id": "probe_preview.gif",
+            "@type": "File",
+            "name": "probe_preview.gif",
+            "contentSize": "793080",
+            "encodingFormat": "image/gif",
+            "sha256": "97ce7fea656f9ef0abb28a2fdd92905a04c0e47ef64008a9728b0d7cdb4bf7c3",
+            "dateCreated": "2026-11-05T01:54:27.537",
+            "subjectOf": {
+                "@id": "probe_preview.gif.meta.json"
+            }
+        },
+        {
+            "@id": "probe_thumb.png.meta.json",
+            "@type": "File",
+            "name": "probe_thumb.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "probe_thumb.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of probe_thumb.png"
+        },
+        {
+            "@id": "probe_thumb.png",
+            "@type": "File",
+            "name": "probe_thumb.png",
+            "contentSize": "142411",
+            "encodingFormat": "image/png",
+            "sha256": "1ae4bc0afc451c513cad57d07928c14f6134d4cd7fd0e703467698b6d1d23c79",
+            "dateCreated": "2026-11-05T01:54:27.542",
+            "subjectOf": {
+                "@id": "probe_thumb.png.meta.json"
+            }
+        },
+        {
+            "@id": "software.bib",
+            "@type": "File",
+            "name": "software.bib",
+            "contentSize": "624",
+            "encodingFormat": "application/x-bibtex",
+            "description": "BibTeX of the software to cite"
+        },
+        {
+            "@id": "#person-1",
+            "@type": "Person",
+            "name": "Behrendt, Manuel"
+        },
+        {
+            "@id": "#mera-1.10.1",
+            "@type": "SoftwareApplication",
+            "name": "Mera.jl",
+            "version": "1.10.1",
+            "url": "https://github.com/ManuelBehrendt/Mera.jl",
+            "identifier": "https://doi.org/10.5281/zenodo.3675254"
+        },
+        {
+            "@id": "#snapshot-L12_SN5_CD_only_output_00390",
+            "@type": "Dataset",
+            "name": "L12_SN5_CD_only/output_00390",
+            "description": "Mera v1.10.1 | L12_SN5_CD_only/output_00390 | 580.05 Myr | L=48.0 ndim=3 lmin=6 lmax=12 | ScalesType003"
+        },
+        {
+            "@id": "#make-probe_hero.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote probe_hero.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "probe_hero.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T01:54:27.031"
+        },
+        {
+            "@id": "#make-probe_movie.mp4",
+            "@type": "CreateAction",
+            "name": "Mera wrote probe_movie.mp4",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "probe_movie.mp4"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T01:54:27.529"
+        },
+        {
+            "@id": "#make-probe_preview.gif",
+            "@type": "CreateAction",
+            "name": "Mera wrote probe_preview.gif",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "probe_preview.gif"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T01:54:27.537"
+        },
+        {
+            "@id": "#make-probe_thumb.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote probe_thumb.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "probe_thumb.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T01:54:27.542"
+        }
+    ]
+}

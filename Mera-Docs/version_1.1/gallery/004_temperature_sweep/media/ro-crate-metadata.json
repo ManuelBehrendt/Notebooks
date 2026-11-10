@@ -1,0 +1,263 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "name": "A temperature sweep through a galaxy",
+            "datePublished": "2026-11-05",
+            "hasPart": [
+                {
+                    "@id": "software.bib"
+                },
+                {
+                    "@id": "sweep_movie.mp4.meta.json"
+                },
+                {
+                    "@id": "sweep_movie.mp4"
+                },
+                {
+                    "@id": "sweep_phases.png.meta.json"
+                },
+                {
+                    "@id": "sweep_phases.png"
+                },
+                {
+                    "@id": "sweep_preview.gif.meta.json"
+                },
+                {
+                    "@id": "sweep_preview.gif"
+                },
+                {
+                    "@id": "sweep_thumb.png.meta.json"
+                },
+                {
+                    "@id": "sweep_thumb.png"
+                }
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/CC-BY-4.0"
+            },
+            "author": [
+                {
+                    "@id": "#person-1"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#make-sweep_movie.mp4"
+                },
+                {
+                    "@id": "#make-sweep_phases.png"
+                },
+                {
+                    "@id": "#make-sweep_preview.gif"
+                },
+                {
+                    "@id": "#make-sweep_thumb.png"
+                }
+            ]
+        },
+        {
+            "@id": "software.bib",
+            "@type": "File",
+            "name": "software.bib",
+            "contentSize": "624",
+            "encodingFormat": "application/x-bibtex",
+            "description": "BibTeX of the software to cite"
+        },
+        {
+            "@id": "sweep_movie.mp4.meta.json",
+            "@type": "File",
+            "name": "sweep_movie.mp4.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "sweep_movie.mp4"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of sweep_movie.mp4"
+        },
+        {
+            "@id": "sweep_movie.mp4",
+            "@type": "File",
+            "name": "sweep_movie.mp4",
+            "contentSize": "4577030",
+            "encodingFormat": "video/mp4",
+            "sha256": "2400c233c61b1d344525434b149982e4caec74fd88bfb76312510e2c200b66fb",
+            "dateCreated": "2026-11-05T05:49:16.769",
+            "subjectOf": {
+                "@id": "sweep_movie.mp4.meta.json"
+            }
+        },
+        {
+            "@id": "sweep_phases.png.meta.json",
+            "@type": "File",
+            "name": "sweep_phases.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "sweep_phases.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of sweep_phases.png"
+        },
+        {
+            "@id": "sweep_phases.png",
+            "@type": "File",
+            "name": "sweep_phases.png",
+            "contentSize": "1971830",
+            "encodingFormat": "image/png",
+            "sha256": "a134a5781c225ac353a808a14d77bd2823203e73a84a7520343f2837b354ac7f",
+            "dateCreated": "2026-11-05T05:49:17.362",
+            "subjectOf": {
+                "@id": "sweep_phases.png.meta.json"
+            }
+        },
+        {
+            "@id": "sweep_preview.gif.meta.json",
+            "@type": "File",
+            "name": "sweep_preview.gif.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "sweep_preview.gif"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of sweep_preview.gif"
+        },
+        {
+            "@id": "sweep_preview.gif",
+            "@type": "File",
+            "name": "sweep_preview.gif",
+            "contentSize": "4721079",
+            "encodingFormat": "image/gif",
+            "sha256": "bc7ee0d9f7abbbc922ca29f9e37998699c05fa5af14de3a0f6fc0e457dae72fb",
+            "dateCreated": "2026-11-05T05:49:17.371",
+            "subjectOf": {
+                "@id": "sweep_preview.gif.meta.json"
+            }
+        },
+        {
+            "@id": "sweep_thumb.png.meta.json",
+            "@type": "File",
+            "name": "sweep_thumb.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "sweep_thumb.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of sweep_thumb.png"
+        },
+        {
+            "@id": "sweep_thumb.png",
+            "@type": "File",
+            "name": "sweep_thumb.png",
+            "contentSize": "164664",
+            "encodingFormat": "image/png",
+            "sha256": "c57f9584246427d9e83662f032bf5383652e5424230d1ba9a8bb53330a3ab81b",
+            "dateCreated": "2026-11-05T05:49:17.400",
+            "subjectOf": {
+                "@id": "sweep_thumb.png.meta.json"
+            }
+        },
+        {
+            "@id": "#person-1",
+            "@type": "Person",
+            "name": "Behrendt, Manuel"
+        },
+        {
+            "@id": "#mera-1.10.1",
+            "@type": "SoftwareApplication",
+            "name": "Mera.jl",
+            "version": "1.10.1",
+            "url": "https://github.com/ManuelBehrendt/Mera.jl",
+            "identifier": "https://doi.org/10.5281/zenodo.3675254"
+        },
+        {
+            "@id": "#snapshot-L12_SN5_CD_only_output_00390",
+            "@type": "Dataset",
+            "name": "L12_SN5_CD_only/output_00390",
+            "description": "Mera v1.10.1 | L12_SN5_CD_only/output_00390 | 580.05 Myr | L=48.0 ndim=3 lmin=6 lmax=12 | ScalesType003"
+        },
+        {
+            "@id": "#make-sweep_movie.mp4",
+            "@type": "CreateAction",
+            "name": "Mera wrote sweep_movie.mp4",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "sweep_movie.mp4"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T05:49:16.769"
+        },
+        {
+            "@id": "#make-sweep_phases.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote sweep_phases.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "sweep_phases.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T05:49:17.362"
+        },
+        {
+            "@id": "#make-sweep_preview.gif",
+            "@type": "CreateAction",
+            "name": "Mera wrote sweep_preview.gif",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "sweep_preview.gif"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T05:49:17.371"
+        },
+        {
+            "@id": "#make-sweep_thumb.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote sweep_thumb.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "sweep_thumb.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L12_SN5_CD_only_output_00390"
+                }
+            ],
+            "endTime": "2026-11-05T05:49:17.400"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "schema": "mera-sidecar/1",
+    "created_utc": "2026-11-05T09:21:34.041",
+    "file": {
+        "name": "cell_differences.png",
+        "bytes": 54451,
+        "sha256": "e7bb32a26b80f974698719dafd732dc02c36b9425f9b667284261548f42c100a"
+    },
+    "result": {
+        "kind": "figure",
+        "format": "png",
+        "made_from": {
+            "type": "InfoType"
+        }
+    },
+    "source": {
+        "complete": true,
+        "summary": "Mera v1.10.1 | L13_SN5_CD_null/output_00201 | 296.74 Myr | L=48.0 ndim=3 lmin=6 lmax=13 | ScalesType003",
+        "simulation_path": ".../heikou/L13_SN5_CD_null",
+        "output": 201,
+        "simcode": "RAMSES",
+        "cosmological": false,
+        "time_myr": 296.7408244065702,
+        "redshift": null,
+        "aexp": 1,
+        "boxlen": 48,
+        "ndim": 3,
+        "levelmin": 6,
+        "levelmax": 13,
+        "scale_type": "ScalesType003",
+        "output_written": "2026-10-05T16:44:57.293",
+        "code_length_kpc": 1.0000000000006481
+    },
+    "input_files": {
+        "namelist.txt": {
+            "sha256": "a881f82767bd4f5130d99c33d44deae01d6b52a91e46909696dbd7e275bf5e58"
+        },
+        "makefile.txt": {
+            "sha256": "83f299d44d3e200699400d4aa80f6cabdc0786d1c47eb8016dccfa13882188c1"
+        },
+        "patches.txt": {
+            "sha256": "868910a902156ec029eb23aa1a8f0fbd081443a5699eb4a421e91b7919c36fca"
+        },
+        "compilation.txt": {
+            "sha256": "7c0a6856d07a7d71729ad4b1f51ee4e6e1559184e8dd4aa9a304e6860ce0f83d"
+        }
+    },
+    "analysis": {
+        "environment": {
+            "path": ".../gallery/005_run_20261105",
+            "project_sha256": "dda49fb30bb267b6178310288a674ece76312d63723ac12a4b9f410af42571a1",
+            "manifest": "Manifest.toml",
+            "manifest_sha256": "4fdb461238538fdf000e1568e8de86c644509c54b120ef0f98a2181bc16ecfba",
+            "packages": {
+                "CairoMakie": "0.15.16",
+                "Dates": "1.11.0",
+                "Mera": "1.10.1",
+                "Printf": "1.11.0",
+                "Random": "1.11.0"
+            }
+        },
+        "script": null
+    },
+    "environment": {
+        "julia_version": "1.12.7",
+        "mera_version": "1.10.1",
+        "mera_build": "1.10.1",
+        "mera_install": {
+            "version": "1.10.1",
+            "source": "registry",
+            "registered": true,
+            "branch": null,
+            "commit": null,
+            "dirty": null,
+            "url": null,
+            "rev": null,
+            "tree_hash": "7b9eba31b65104f14555a042cfbc75f755f7d744"
+        },
+        "os": "Linux",
+        "machine": "x86_64-linux-gnu",
+        "cpu_model": "Intel(R) Xeon(R) Platinum 8260Y CPU @ 2.40GHz",
+        "cpu_threads": 96,
+        "julia_threads": 16,
+        "blas_threads": 1
+    }
+}

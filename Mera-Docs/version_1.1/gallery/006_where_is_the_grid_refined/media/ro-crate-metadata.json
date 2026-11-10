@@ -1,0 +1,513 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "name": "Where is the grid refined",
+            "datePublished": "2026-11-05",
+            "hasPart": [
+                {
+                    "@id": "grid_3d.png.meta.json"
+                },
+                {
+                    "@id": "grid_3d.png"
+                },
+                {
+                    "@id": "grid_3d_preview.gif.meta.json"
+                },
+                {
+                    "@id": "grid_3d_preview.gif"
+                },
+                {
+                    "@id": "grid_3d_rotation.mp4.meta.json"
+                },
+                {
+                    "@id": "grid_3d_rotation.mp4"
+                },
+                {
+                    "@id": "grid_levels_counts.png.meta.json"
+                },
+                {
+                    "@id": "grid_levels_counts.png"
+                },
+                {
+                    "@id": "grid_levels_maps.png.meta.json"
+                },
+                {
+                    "@id": "grid_levels_maps.png"
+                },
+                {
+                    "@id": "grid_levels_side.png.meta.json"
+                },
+                {
+                    "@id": "grid_levels_side.png"
+                },
+                {
+                    "@id": "grid_levels_slice.png.meta.json"
+                },
+                {
+                    "@id": "grid_levels_slice.png"
+                },
+                {
+                    "@id": "grid_zoom_edges.png.meta.json"
+                },
+                {
+                    "@id": "grid_zoom_edges.png"
+                },
+                {
+                    "@id": "software.bib"
+                },
+                {
+                    "@id": "where_is_the_grid_refined_thumb.png.meta.json"
+                },
+                {
+                    "@id": "where_is_the_grid_refined_thumb.png"
+                }
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/CC-BY-4.0"
+            },
+            "author": [
+                {
+                    "@id": "#person-1"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#make-grid_3d.png"
+                },
+                {
+                    "@id": "#make-grid_3d_preview.gif"
+                },
+                {
+                    "@id": "#make-grid_3d_rotation.mp4"
+                },
+                {
+                    "@id": "#make-grid_levels_counts.png"
+                },
+                {
+                    "@id": "#make-grid_levels_maps.png"
+                },
+                {
+                    "@id": "#make-grid_levels_side.png"
+                },
+                {
+                    "@id": "#make-grid_levels_slice.png"
+                },
+                {
+                    "@id": "#make-grid_zoom_edges.png"
+                },
+                {
+                    "@id": "#make-where_is_the_grid_refined_thumb.png"
+                }
+            ]
+        },
+        {
+            "@id": "grid_3d.png.meta.json",
+            "@type": "File",
+            "name": "grid_3d.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_3d.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_3d.png"
+        },
+        {
+            "@id": "grid_3d.png",
+            "@type": "File",
+            "name": "grid_3d.png",
+            "contentSize": "3042391",
+            "encodingFormat": "image/png",
+            "sha256": "d92fabcf6e03029cab8edd2ceb7bf844d259e7f4e32a351ab8f6789652e508d4",
+            "dateCreated": "2026-11-04T21:50:32.328",
+            "subjectOf": {
+                "@id": "grid_3d.png.meta.json"
+            }
+        },
+        {
+            "@id": "grid_3d_preview.gif.meta.json",
+            "@type": "File",
+            "name": "grid_3d_preview.gif.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_3d_preview.gif"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_3d_preview.gif"
+        },
+        {
+            "@id": "grid_3d_preview.gif",
+            "@type": "File",
+            "name": "grid_3d_preview.gif",
+            "contentSize": "1246152",
+            "encodingFormat": "image/gif",
+            "sha256": "724427df2316b04d0ea07f221bbbcb466ab694663470547dccabd345f3bb1505",
+            "dateCreated": "2026-11-04T21:50:32.901",
+            "subjectOf": {
+                "@id": "grid_3d_preview.gif.meta.json"
+            }
+        },
+        {
+            "@id": "grid_3d_rotation.mp4.meta.json",
+            "@type": "File",
+            "name": "grid_3d_rotation.mp4.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_3d_rotation.mp4"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_3d_rotation.mp4"
+        },
+        {
+            "@id": "grid_3d_rotation.mp4",
+            "@type": "File",
+            "name": "grid_3d_rotation.mp4",
+            "contentSize": "2237506",
+            "encodingFormat": "video/mp4",
+            "sha256": "cc0e231493618b5b2595628d1c81933e7a20c497b7a9619aab20fd740a3e99a0",
+            "dateCreated": "2026-11-04T21:50:32.912",
+            "subjectOf": {
+                "@id": "grid_3d_rotation.mp4.meta.json"
+            }
+        },
+        {
+            "@id": "grid_levels_counts.png.meta.json",
+            "@type": "File",
+            "name": "grid_levels_counts.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_levels_counts.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_levels_counts.png"
+        },
+        {
+            "@id": "grid_levels_counts.png",
+            "@type": "File",
+            "name": "grid_levels_counts.png",
+            "contentSize": "81015",
+            "encodingFormat": "image/png",
+            "sha256": "6233033fb7fe8e0113e2c78b190852b194f60a3779d600acde804811eba286cc",
+            "dateCreated": "2026-11-04T21:50:32.928",
+            "subjectOf": {
+                "@id": "grid_levels_counts.png.meta.json"
+            }
+        },
+        {
+            "@id": "grid_levels_maps.png.meta.json",
+            "@type": "File",
+            "name": "grid_levels_maps.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_levels_maps.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_levels_maps.png"
+        },
+        {
+            "@id": "grid_levels_maps.png",
+            "@type": "File",
+            "name": "grid_levels_maps.png",
+            "contentSize": "682819",
+            "encodingFormat": "image/png",
+            "sha256": "cd34689ddf73dd7f8c8a64fc7edd1056f30171430b258ddcb370d5579a72238e",
+            "dateCreated": "2026-11-04T21:50:32.931",
+            "subjectOf": {
+                "@id": "grid_levels_maps.png.meta.json"
+            }
+        },
+        {
+            "@id": "grid_levels_side.png.meta.json",
+            "@type": "File",
+            "name": "grid_levels_side.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_levels_side.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_levels_side.png"
+        },
+        {
+            "@id": "grid_levels_side.png",
+            "@type": "File",
+            "name": "grid_levels_side.png",
+            "contentSize": "180334",
+            "encodingFormat": "image/png",
+            "sha256": "31fae88786ad1daad0cd0183067b6d62caf9edbd73d09e01e96d9c2e5b0b9dcd",
+            "dateCreated": "2026-11-04T21:50:32.937",
+            "subjectOf": {
+                "@id": "grid_levels_side.png.meta.json"
+            }
+        },
+        {
+            "@id": "grid_levels_slice.png.meta.json",
+            "@type": "File",
+            "name": "grid_levels_slice.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_levels_slice.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_levels_slice.png"
+        },
+        {
+            "@id": "grid_levels_slice.png",
+            "@type": "File",
+            "name": "grid_levels_slice.png",
+            "contentSize": "169109",
+            "encodingFormat": "image/png",
+            "sha256": "ddd8aa2ce8e86a010edb108f68e61ca985c8fa5bbb8ea1abf055350eaadecf16",
+            "dateCreated": "2026-11-04T21:50:32.941",
+            "subjectOf": {
+                "@id": "grid_levels_slice.png.meta.json"
+            }
+        },
+        {
+            "@id": "grid_zoom_edges.png.meta.json",
+            "@type": "File",
+            "name": "grid_zoom_edges.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "grid_zoom_edges.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of grid_zoom_edges.png"
+        },
+        {
+            "@id": "grid_zoom_edges.png",
+            "@type": "File",
+            "name": "grid_zoom_edges.png",
+            "contentSize": "412222",
+            "encodingFormat": "image/png",
+            "sha256": "f50b210c710f6e585a7283bfc5b780097b89d67d084e419326684e48adbde572",
+            "dateCreated": "2026-11-04T21:50:32.945",
+            "subjectOf": {
+                "@id": "grid_zoom_edges.png.meta.json"
+            }
+        },
+        {
+            "@id": "software.bib",
+            "@type": "File",
+            "name": "software.bib",
+            "contentSize": "624",
+            "encodingFormat": "application/x-bibtex",
+            "description": "BibTeX of the software to cite"
+        },
+        {
+            "@id": "where_is_the_grid_refined_thumb.png.meta.json",
+            "@type": "File",
+            "name": "where_is_the_grid_refined_thumb.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "where_is_the_grid_refined_thumb.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of where_is_the_grid_refined_thumb.png"
+        },
+        {
+            "@id": "where_is_the_grid_refined_thumb.png",
+            "@type": "File",
+            "name": "where_is_the_grid_refined_thumb.png",
+            "contentSize": "485049",
+            "encodingFormat": "image/png",
+            "sha256": "14e71ea45a1864f89c8c82a2a4a53702b2d790b1c07cdd63db456589ca163ac6",
+            "dateCreated": "2026-11-04T21:50:32.950",
+            "subjectOf": {
+                "@id": "where_is_the_grid_refined_thumb.png.meta.json"
+            }
+        },
+        {
+            "@id": "#person-1",
+            "@type": "Person",
+            "name": "Behrendt, Manuel"
+        },
+        {
+            "@id": "#mera-1.10.1",
+            "@type": "SoftwareApplication",
+            "name": "Mera.jl",
+            "version": "1.10.1",
+            "url": "https://github.com/ManuelBehrendt/Mera.jl",
+            "identifier": "https://doi.org/10.5281/zenodo.3675254"
+        },
+        {
+            "@id": "#snapshot-L13_output_00390",
+            "@type": "Dataset",
+            "name": "L13/output_00390",
+            "description": "Mera v1.10.1 | L13/output_00390 | 578.6 Myr | L=48.0 ndim=3 lmin=6 lmax=13 | ScalesType003"
+        },
+        {
+            "@id": "#make-grid_3d.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_3d.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_3d.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.328"
+        },
+        {
+            "@id": "#make-grid_3d_preview.gif",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_3d_preview.gif",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_3d_preview.gif"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.901"
+        },
+        {
+            "@id": "#make-grid_3d_rotation.mp4",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_3d_rotation.mp4",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_3d_rotation.mp4"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.912"
+        },
+        {
+            "@id": "#make-grid_levels_counts.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_levels_counts.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_levels_counts.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.928"
+        },
+        {
+            "@id": "#make-grid_levels_maps.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_levels_maps.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_levels_maps.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.931"
+        },
+        {
+            "@id": "#make-grid_levels_side.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_levels_side.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_levels_side.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.937"
+        },
+        {
+            "@id": "#make-grid_levels_slice.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_levels_slice.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_levels_slice.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.941"
+        },
+        {
+            "@id": "#make-grid_zoom_edges.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote grid_zoom_edges.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "grid_zoom_edges.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.945"
+        },
+        {
+            "@id": "#make-where_is_the_grid_refined_thumb.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote where_is_the_grid_refined_thumb.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "where_is_the_grid_refined_thumb.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_output_00390"
+                }
+            ],
+            "endTime": "2026-11-04T21:50:32.950"
+        }
+    ]
+}

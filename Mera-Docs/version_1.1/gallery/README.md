@@ -20,6 +20,25 @@ notebook's header table, which records the Mera build and the exact snapshot, th
 result reproducible rather than merely described. See
 [Reproducibility](https://manuelbehrendt.github.io/Mera.jl/stable/reproducibility/).
 
+Every recipe ends by recording what it made, so each picture can be traced back on its own:
+
+```
+  media/coin_flip_movie.mp4.meta.json   the sidecar: the snapshot it shows, the Mera and Julia that
+                                        made it, the SHA-256 of the file and of the run's input files
+  media/software.bib                    the BibTeX of the versions used
+  media/ro-crate-metadata.json          one RO-Crate record of the folder, ready for Zenodo
+```
+
+`readsidecar("media/coin_flip_movie.mp4")` in Julia prints the record and checks that the file is
+unchanged. The sidecars keep only the last two parts of the simulation path (`anonymize = true`),
+so they name the snapshot without the layout of the disk it was read from. See
+[Sharing Results & Sidecars](https://manuelbehrendt.github.io/Mera.jl/stable/export_sidecars/).
+
+The figures and movies in each `media/` folder are under
+[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/): anyone may reuse them, with credit. The
+code in the recipes is under the MIT license, like Mera itself. The RO-Crate record names the
+license of the media, so a repository such as Zenodo shows it. [`LICENSE`](LICENSE) has both.
+
 The number is just the order recipes arrived. It never changes, so `001` stays a stable way to
 refer to one even if its title does not.
 
@@ -29,7 +48,7 @@ Notebooks carry no stored outputs: you produce them by running.
 |---|---|---|---|---|---|
 | | [`TEMPLATE/`](TEMPLATE) | any | the skeleton to start from, with a cell that prints your attribution block | | |
 | <img src="001_coin_flip_movie/media/coin_flip_movie_thumb.png" width="180"> | [`001_coin_flip_movie/`](001_coin_flip_movie) | RAMSES | a three-panel animation, Σ / v_LOS / T, camera tipping face-on to edge-on, turning in place, tumbling like a spun coin, falling flat. Seamless loop. Needs CairoMakie, ColorSchemes, ffmpeg. | Manuel Behrendt | checked 2026-09-11 |
-| <img src="002_word_in_a_galaxy/media/word_in_a_galaxy_thumb.png" width="180"> | [`002_word_in_a_galaxy/`](002_word_in_a_galaxy) | RAMSES | the word MERA carved out of a gas disc with region algebra, and the same letters kept instead, face-on, at 60° and repeated on the stars, plus a movie of the word turning, flipping and zooming. A stencil font built from `Cuboid`s. Needs CairoMakie and ffmpeg. | Manuel Behrendt | contributed 2026-09-16 |
+| <img src="002_word_in_a_galaxy/media/word_in_a_galaxy_thumb.png" width="180"> | [`002_word_in_a_galaxy/`](002_word_in_a_galaxy) | RAMSES | the word MERA carved out of a gas disc with region algebra, and the same letters kept instead, face-on, at 60° and repeated on the stars, plus a movie of the word turning, flipping and zooming. A stencil font built from `cuboid` regions. Needs CairoMakie and ffmpeg. | Manuel Behrendt | contributed 2026-09-16 |
 | <img src="003_probe_through_a_galaxy/media/probe_thumb.png" width="180"> | [`003_probe_through_a_galaxy/`](003_probe_through_a_galaxy) | RAMSES | a probe sphere the thickness of the disc is carried once around the galaxy at 60°, showing only the gas inside it, while the view cycles through surface density, line-of-sight velocity, dispersion, temperature, pressure and the stars. Needs CairoMakie, ColorSchemes, ffmpeg. | Manuel Behrendt | contributed 2026-09-16 |
 | <img src="004_temperature_sweep/media/sweep_thumb.png" width="180"> | [`004_temperature_sweep/`](004_temperature_sweep) | RAMSES | a volume rendering where the camera holds still and the transfer function moves: a window 0.12 dex wide slides from 30 K to 10⁷ K so each phase of the gas lights up where it lives, then the window opens into fog and closes, then three phases are faded in together. Uses `tau_target` to renormalise every frame. Needs CairoMakie, ColorSchemes, FFMPEG_jll. | Manuel Behrendt | contributed 2026-09-18 |
 | <img src="005_ramses_any_rank_count/media/ramses_any_rank_count_thumb.png" width="180"> | [`005_ramses_any_rank_count/`](005_ramses_any_rank_count) | RAMSES | a 197-million-cell galaxy run rewritten for 512, 5120 and 10240 MPI ranks, with `repartition` from its RAMSES files and with `writeramses` from its mera file; every value compared with the original, every cell counted, domain maps, and the time, memory and disk of writing and of reading back. Needs CairoMakie and Mera 1.8, the first release with the RAMSES writer; a few hundred GB of scratch disk. | Manuel Behrendt | contributed 2026-10-07 |
@@ -69,6 +88,11 @@ The format that works, from the recipe above:
    environment exact rather than merely bounded. See **Should I commit the Manifest?** below.
 7. **Make a thumbnail.** One picture that says what the recipe produces. Mera sizes it for you,
    see below.
+8. **Record what you made.** Keep the TEMPLATE's last code cell: it writes a sidecar for every
+   figure and movie in `media/`, the BibTeX of the versions used, and an RO-Crate record of the
+   folder. Run it after the thumbnail, so the thumbnail is recorded too, and commit what it writes
+   along with the media. It needs Mera 1.9 or later. Keep `license = "CC-BY-4.0"` in it: a
+   gallery recipe shares its media under the same license as the others.
 
 ## Should I commit the Manifest?
 

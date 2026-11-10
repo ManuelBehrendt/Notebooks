@@ -1,0 +1,363 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "name": "Rewriting a RAMSES output for any number of CPUs",
+            "datePublished": "2026-11-05",
+            "hasPart": [
+                {
+                    "@id": "cell_differences.csv"
+                },
+                {
+                    "@id": "cell_differences.png.meta.json"
+                },
+                {
+                    "@id": "cell_differences.png"
+                },
+                {
+                    "@id": "compare.csv"
+                },
+                {
+                    "@id": "compare_routes.csv"
+                },
+                {
+                    "@id": "cost.png.meta.json"
+                },
+                {
+                    "@id": "cost.png"
+                },
+                {
+                    "@id": "domains.png.meta.json"
+                },
+                {
+                    "@id": "domains.png"
+                },
+                {
+                    "@id": "domains_two.png.meta.json"
+                },
+                {
+                    "@id": "domains_two.png"
+                },
+                {
+                    "@id": "ramses_any_rank_count_thumb.png.meta.json"
+                },
+                {
+                    "@id": "ramses_any_rank_count_thumb.png"
+                },
+                {
+                    "@id": "reads.csv"
+                },
+                {
+                    "@id": "results.csv"
+                },
+                {
+                    "@id": "software.bib"
+                }
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/CC-BY-4.0"
+            },
+            "author": [
+                {
+                    "@id": "#person-1"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#make-cell_differences.png"
+                },
+                {
+                    "@id": "#make-cost.png"
+                },
+                {
+                    "@id": "#make-domains.png"
+                },
+                {
+                    "@id": "#make-domains_two.png"
+                },
+                {
+                    "@id": "#make-ramses_any_rank_count_thumb.png"
+                }
+            ]
+        },
+        {
+            "@id": "cell_differences.csv",
+            "@type": "File",
+            "name": "cell_differences.csv",
+            "contentSize": "1025",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "cell_differences.png.meta.json",
+            "@type": "File",
+            "name": "cell_differences.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "cell_differences.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of cell_differences.png"
+        },
+        {
+            "@id": "cell_differences.png",
+            "@type": "File",
+            "name": "cell_differences.png",
+            "contentSize": "54451",
+            "encodingFormat": "image/png",
+            "sha256": "e7bb32a26b80f974698719dafd732dc02c36b9425f9b667284261548f42c100a",
+            "dateCreated": "2026-11-05T09:21:34.041",
+            "subjectOf": {
+                "@id": "cell_differences.png.meta.json"
+            }
+        },
+        {
+            "@id": "compare.csv",
+            "@type": "File",
+            "name": "compare.csv",
+            "contentSize": "301",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "compare_routes.csv",
+            "@type": "File",
+            "name": "compare_routes.csv",
+            "contentSize": "182",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "cost.png.meta.json",
+            "@type": "File",
+            "name": "cost.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "cost.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of cost.png"
+        },
+        {
+            "@id": "cost.png",
+            "@type": "File",
+            "name": "cost.png",
+            "contentSize": "312251",
+            "encodingFormat": "image/png",
+            "sha256": "dceac7f2e792837389383fc12145efa74aaca75284852b0c4543386ffcf3faba",
+            "dateCreated": "2026-11-05T09:21:36.388",
+            "subjectOf": {
+                "@id": "cost.png.meta.json"
+            }
+        },
+        {
+            "@id": "domains.png.meta.json",
+            "@type": "File",
+            "name": "domains.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "domains.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of domains.png"
+        },
+        {
+            "@id": "domains.png",
+            "@type": "File",
+            "name": "domains.png",
+            "contentSize": "183422",
+            "encodingFormat": "image/png",
+            "sha256": "b7bdee7200c5a2684ab1e56e4f11bea421f0f8ae210c46ea8c006705719b5d38",
+            "dateCreated": "2026-11-05T09:21:36.396",
+            "subjectOf": {
+                "@id": "domains.png.meta.json"
+            }
+        },
+        {
+            "@id": "domains_two.png.meta.json",
+            "@type": "File",
+            "name": "domains_two.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "domains_two.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of domains_two.png"
+        },
+        {
+            "@id": "domains_two.png",
+            "@type": "File",
+            "name": "domains_two.png",
+            "contentSize": "96100",
+            "encodingFormat": "image/png",
+            "sha256": "6f968bb7c583152aa700c5bcdb38524a0dc2a2b84745575fe56dcb48f8d0cf15",
+            "dateCreated": "2026-11-05T09:21:36.402",
+            "subjectOf": {
+                "@id": "domains_two.png.meta.json"
+            }
+        },
+        {
+            "@id": "ramses_any_rank_count_thumb.png.meta.json",
+            "@type": "File",
+            "name": "ramses_any_rank_count_thumb.png.meta.json",
+            "encodingFormat": "application/json",
+            "about": {
+                "@id": "ramses_any_rank_count_thumb.png"
+            },
+            "description": "Mera sidecar (mera-sidecar/1): provenance, units and environment of ramses_any_rank_count_thumb.png"
+        },
+        {
+            "@id": "ramses_any_rank_count_thumb.png",
+            "@type": "File",
+            "name": "ramses_any_rank_count_thumb.png",
+            "contentSize": "88849",
+            "encodingFormat": "image/png",
+            "sha256": "2c2786842714fb1368c086f23fdbc14beab7c5d64ae1d8eb502b32147066d72b",
+            "dateCreated": "2026-11-05T09:21:36.408",
+            "subjectOf": {
+                "@id": "ramses_any_rank_count_thumb.png.meta.json"
+            }
+        },
+        {
+            "@id": "reads.csv",
+            "@type": "File",
+            "name": "reads.csv",
+            "contentSize": "181",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "results.csv",
+            "@type": "File",
+            "name": "results.csv",
+            "contentSize": "365",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "software.bib",
+            "@type": "File",
+            "name": "software.bib",
+            "contentSize": "624",
+            "encodingFormat": "application/x-bibtex",
+            "description": "BibTeX of the software to cite"
+        },
+        {
+            "@id": "#person-1",
+            "@type": "Person",
+            "name": "Behrendt, Manuel"
+        },
+        {
+            "@id": "#mera-1.10.1",
+            "@type": "SoftwareApplication",
+            "name": "Mera.jl",
+            "version": "1.10.1",
+            "url": "https://github.com/ManuelBehrendt/Mera.jl",
+            "identifier": "https://doi.org/10.5281/zenodo.3675254"
+        },
+        {
+            "@id": "#snapshot-L13_SN5_CD_null_output_00201",
+            "@type": "Dataset",
+            "name": "L13_SN5_CD_null/output_00201",
+            "description": "Mera v1.10.1 | L13_SN5_CD_null/output_00201 | 296.74 Myr | L=48.0 ndim=3 lmin=6 lmax=13 | ScalesType003"
+        },
+        {
+            "@id": "#make-cell_differences.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote cell_differences.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "cell_differences.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_SN5_CD_null_output_00201"
+                }
+            ],
+            "endTime": "2026-11-05T09:21:34.041"
+        },
+        {
+            "@id": "#make-cost.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote cost.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "cost.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_SN5_CD_null_output_00201"
+                }
+            ],
+            "endTime": "2026-11-05T09:21:36.388"
+        },
+        {
+            "@id": "#make-domains.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote domains.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "domains.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_SN5_CD_null_output_00201"
+                }
+            ],
+            "endTime": "2026-11-05T09:21:36.396"
+        },
+        {
+            "@id": "#make-domains_two.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote domains_two.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "domains_two.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_SN5_CD_null_output_00201"
+                }
+            ],
+            "endTime": "2026-11-05T09:21:36.402"
+        },
+        {
+            "@id": "#make-ramses_any_rank_count_thumb.png",
+            "@type": "CreateAction",
+            "name": "Mera wrote ramses_any_rank_count_thumb.png",
+            "instrument": [
+                {
+                    "@id": "#mera-1.10.1"
+                }
+            ],
+            "result": {
+                "@id": "ramses_any_rank_count_thumb.png"
+            },
+            "object": [
+                {
+                    "@id": "#snapshot-L13_SN5_CD_null_output_00201"
+                }
+            ],
+            "endTime": "2026-11-05T09:21:36.408"
+        }
+    ]
+}
